@@ -15,16 +15,6 @@
 		1484E5491F8AD50900699E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1484E5471F8AD50900699E32 /* LaunchScreen.storyboard */; };
 		1484E5541F8AD50900699E32 /* YouTubeCopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5531F8AD50900699E32 /* YouTubeCopyTests.swift */; };
 		1484E55F1F8AD50900699E32 /* YouTubeCopyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E55E1F8AD50900699E32 /* YouTubeCopyUITests.swift */; };
-		1484E5761F8B1B3400699E32 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E56C1F8B1B3000699E32 /* UIViewAnchorPoint.swift */; };
-		1484E5771F8B1B3400699E32 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E56D1F8B1B3100699E32 /* UISliderX.swift */; };
-		1484E5781F8B1B3400699E32 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E56E1F8B1B3100699E32 /* UIViewControllerX.swift */; };
-		1484E5791F8B1B3400699E32 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E56F1F8B1B3100699E32 /* UIViewXRadialGradient.swift */; };
-		1484E57A1F8B1B3400699E32 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5701F8B1B3100699E32 /* UIButtonX.swift */; };
-		1484E57B1F8B1B3400699E32 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5711F8B1B3200699E32 /* UITextFieldX.swift */; };
-		1484E57C1F8B1B3400699E32 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5721F8B1B3200699E32 /* UIImageViewX.swift */; };
-		1484E57D1F8B1B3400699E32 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5731F8B1B3300699E32 /* UILabelX.swift */; };
-		1484E57E1F8B1B3400699E32 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5741F8B1B3300699E32 /* UIVisualEffectViewX.swift */; };
-		1484E57F1F8B1B3400699E32 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484E5751F8B1B3300699E32 /* UIViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,16 +49,6 @@
 		1484E55A1F8AD50900699E32 /* YouTubeCopyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeCopyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484E55E1F8AD50900699E32 /* YouTubeCopyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeCopyUITests.swift; sourceTree = "<group>"; };
 		1484E5601F8AD50900699E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1484E56C1F8B1B3000699E32 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewAnchorPoint.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIViewAnchorPoint.swift; sourceTree = "<group>"; };
-		1484E56D1F8B1B3100699E32 /* UISliderX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UISliderX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UISliderX.swift; sourceTree = "<group>"; };
-		1484E56E1F8B1B3100699E32 /* UIViewControllerX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIViewControllerX.swift; sourceTree = "<group>"; };
-		1484E56F1F8B1B3100699E32 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewXRadialGradient.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIViewXRadialGradient.swift; sourceTree = "<group>"; };
-		1484E5701F8B1B3100699E32 /* UIButtonX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIButtonX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIButtonX.swift; sourceTree = "<group>"; };
-		1484E5711F8B1B3200699E32 /* UITextFieldX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextFieldX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UITextFieldX.swift; sourceTree = "<group>"; };
-		1484E5721F8B1B3200699E32 /* UIImageViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIImageViewX.swift; sourceTree = "<group>"; };
-		1484E5731F8B1B3300699E32 /* UILabelX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UILabelX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UILabelX.swift; sourceTree = "<group>"; };
-		1484E5741F8B1B3300699E32 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIVisualEffectViewX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIVisualEffectViewX.swift; sourceTree = "<group>"; };
-		1484E5751F8B1B3300699E32 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewX.swift; path = ../../DesignableX/DesignableXTesting/DesignableXTesting/DesignableX/UIViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +101,6 @@
 			children = (
 				1484E53B1F8AD50900699E32 /* AppDelegate.swift */,
 				1484E53D1F8AD50900699E32 /* HomeController.swift */,
-				1484E5701F8B1B3100699E32 /* UIButtonX.swift */,
-				1484E5721F8B1B3200699E32 /* UIImageViewX.swift */,
-				1484E5731F8B1B3300699E32 /* UILabelX.swift */,
-				1484E56D1F8B1B3100699E32 /* UISliderX.swift */,
-				1484E5711F8B1B3200699E32 /* UITextFieldX.swift */,
-				1484E56C1F8B1B3000699E32 /* UIViewAnchorPoint.swift */,
-				1484E56E1F8B1B3100699E32 /* UIViewControllerX.swift */,
-				1484E5751F8B1B3300699E32 /* UIViewX.swift */,
-				1484E56F1F8B1B3100699E32 /* UIViewXRadialGradient.swift */,
-				1484E5741F8B1B3300699E32 /* UIVisualEffectViewX.swift */,
 				1484E53F1F8AD50900699E32 /* Main.storyboard */,
 				1484E5451F8AD50900699E32 /* Assets.xcassets */,
 				1484E5471F8AD50900699E32 /* LaunchScreen.storyboard */,
@@ -292,17 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1484E57D1F8B1B3400699E32 /* UILabelX.swift in Sources */,
-				1484E5761F8B1B3400699E32 /* UIViewAnchorPoint.swift in Sources */,
-				1484E57E1F8B1B3400699E32 /* UIVisualEffectViewX.swift in Sources */,
-				1484E57C1F8B1B3400699E32 /* UIImageViewX.swift in Sources */,
-				1484E5771F8B1B3400699E32 /* UISliderX.swift in Sources */,
 				1484E5441F8AD50900699E32 /* YouTubeCopy.xcdatamodeld in Sources */,
-				1484E57B1F8B1B3400699E32 /* UITextFieldX.swift in Sources */,
-				1484E5791F8B1B3400699E32 /* UIViewXRadialGradient.swift in Sources */,
-				1484E57A1F8B1B3400699E32 /* UIButtonX.swift in Sources */,
-				1484E5781F8B1B3400699E32 /* UIViewControllerX.swift in Sources */,
-				1484E57F1F8B1B3400699E32 /* UIViewX.swift in Sources */,
 				1484E53E1F8AD50900699E32 /* HomeController.swift in Sources */,
 				1484E53C1F8AD50900699E32 /* AppDelegate.swift in Sources */,
 			);
