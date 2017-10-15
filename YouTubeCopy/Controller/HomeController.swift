@@ -24,11 +24,13 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         blankSpaceVideo.title = "Stephen Colbert - Blank Space"
         blankSpaceVideo.thumbnailImageName = "ColbertFullImage"
         blankSpaceVideo.channel = stephenColbert
+        blankSpaceVideo.numberOfViews = 104522765
         
         var badBloodVideo = Video()
-        badBloodVideo.title = "Kendrick Lamar & T Swift - Bad Blood"
+        badBloodVideo.title = "Kendrick Lamar & T Swift - Bad Blood So Much Blood"
         badBloodVideo.thumbnailImageName = "badBlood"
         badBloodVideo.channel = kendrickChannel
+        badBloodVideo.numberOfViews = 23536563
         
         return [blankSpaceVideo, badBloodVideo]
     }()
@@ -99,7 +101,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = (view.frame.width - 16 - 16) * 9/16
-        return CGSize.init(width: view.frame.width, height: height + 16 + 68)
+        return CGSize.init(width: view.frame.width, height: height + 16 + 88)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

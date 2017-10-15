@@ -31,6 +31,26 @@ class VideoCell: BaseClass {
             thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
             if let profileImageName = video?.channel?.profileImageName {
                 userProfileImageView.image = UIImage(named: profileImageName)
+                
+                if let channelName = video?.channel?.name, let numberOfViews = video?.numberOfViews {
+                    let numberFormatter = NumberFormatter()
+                    numberFormatter.numberStyle = .decimal
+                    
+                    let subtitleText = "\(channelName) - \(numberFormatter.string(from: numberOfViews)!) - 2 years ago"
+                    subtitleTextView.text = subtitleText
+                }
+                
+                if let title = video?.title {
+                    let size = CGSize.init(width: frame.width - 16 - 44 - 8 - 16, height: 1000)
+                    let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+                    let estimatedRect = NSString(string: title).boundingRect(with: size, options: options, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14)], context: nil)
+                    if estimatedRect.size.height > 20 {
+                        titleLabelHeightConstraint?.constant = 44
+                    } else {
+                        titleLabelHeightConstraint?.constant = 22
+                    }
+                }
+                
             }
         }
     }
@@ -58,6 +78,7 @@ class VideoCell: BaseClass {
         //        label.backgroundColor = UIColor.purple
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "The Late Show With Stephen Colbert"
+        label.numberOfLines = 2
         return label
     }()
     
@@ -77,6 +98,8 @@ class VideoCell: BaseClass {
         return view
     }()
     
+    var titleLabelHeightConstraint: NSLayoutConstraint?
+    
     override func setupViews() {
         addSubview(thumbnailImageView)
         addSubview(separatorView)
@@ -89,14 +112,18 @@ class VideoCell: BaseClass {
         addConstraintsWithFormat(format: "H:|[v0]|", views: separatorView)
         
         //vertical constraints
-        addConstraintsWithFormat(format: "V:|-16-[v0]-8-[v1(44)]-16-[v2(1)]|", views: thumbnailImageView,
+        addConstraintsWithFormat(format: "V:|-16-[v0]-8-[v1(44)]-36-[v2(1)]|", views: thumbnailImageView,
                                  userProfileImageView, separatorView)
+        
+        titleLabelHeightConstraint = titleLabel.heightAnchor.constraint(equalToConstant: 44)
+        addConstraint(titleLabelHeightConstraint!)
+
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: thumbnailImageView.bottomAnchor, constant: 8),
             titleLabel.leadingAnchor.constraint(equalTo: userProfileImageView.trailingAnchor, constant: 8),
             titleLabel.trailingAnchor.constraint(equalTo: thumbnailImageView.trailingAnchor, constant: 0),
-            titleLabel.heightAnchor.constraint(equalToConstant: 20)
+//            titleLabel.heightAnchor.constraint(equalToConstant: 44)
             ])
         
         NSLayoutConstraint.activate([
